@@ -1,0 +1,56 @@
+/* Make the main header stay in place when you scroll */
+.fixedHeader {
+    position: fixed;
+    top: 0;
+    height: 4cm;
+    width: 100%;
+    /* TODO: Q: Why is `width: 100%` necessary here?
+     * w3schools claims that a block element "takes up the whole width"
+     * and we defined header as a block element
+     */
+    background-color: lightblue;
+    text-align: center;
+}
+
+.fixedHeaderSpacer {
+    height: 4cm;
+    display: block;
+    background-color: black;
+}
+
+section.blog {
+    background-color: lightgrey;
+    overflow: auto;
+    /* TODO: Q: Why does `overflow: auto;` work here?
+     * w3schools claims "The overflow property only works for block elements with a specified height."
+     * and I didn't specify a height
+     */
+}
+
+.sidebar {
+    background-color: white;
+    float: right;
+    width: 15%;
+    padding: .5cm;
+}
+
+article.blog {
+    background-color: #f0ead6;  /* eggshell */
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+/* w3schools boilerplate:*/
+/* have the following "important" semantic elements be block elements (start on new line & take all available width) */
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
+    display: block;
+}
+
+/* get rid of unwanted whitespace on edges of page */
+body {
+    margin: 0
+}
+
