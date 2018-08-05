@@ -1,16 +1,44 @@
-
 .headerContent {
     margin-left: auto;  /* center horizontally */
     margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     width: 80%;
     background-color: green;
+}
+
+#profile {
+    display: flex;
+    background-color: white;
+    height: 80%;
+    justify-content: center;
+}
+
+
+#profilePicture {
+    border-radius: 50%;  /* Circular picture */
+    width: auto;
+    height: 100%;
+    display: block;  /* idk; for good luck */
+}
+
+#profilePictureContainer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+}
+
+/* from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+.centerVertically {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #siteHeader {
     height: 5cm;
     width: 100%;
+    display: flex;
     /* TODO: Q: Why is `width: 100%` necessary here?
      * w3schools claims that a block element "takes up the whole width"
      * and we defined header as a block element
