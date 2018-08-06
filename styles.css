@@ -1,14 +1,13 @@
+/* Uffizi palette: https://coolors.co/e1e1e1-3c4447-787d78-3d4444-BDBFC1 */
 .headerContent {
     margin-left: auto;  /* center horizontally */
     margin-right: auto;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     width: 80%;
-    background-color: green;
 }
 
 #profile {
-    background-color: white;
     height: 80%;
     display: flex;
     justify-content: center;  /* center horizontally */
@@ -27,6 +26,48 @@
     margin-bottom: 8px;
 }
 
+#profileStatus {
+    font-family: 'Palatino', 'Times', 'Serif';
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+h2 {
+    font-size: 1.875em;
+    margin-top: 0em;
+    margin-bottom: 0.175em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+#tagline {
+    text-align: center;
+    font-family: 'Arial Black', 'Sans-serif';
+    font-size: 1.125em;
+    padding-top: 0.5em;
+}
+
 /* from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
 .centerVertically {
     position: relative;
@@ -42,12 +83,11 @@
      * w3schools claims that a block element "takes up the whole width"
      * and we defined header as a block element
      */
-    background-color: lightblue;
-    text-align: center;
+    background-color: #3C4447;
+    color: #d8d9da;
 }
 
 section.blog {
-    background-color: lightgrey;
     overflow: auto;
     /* TODO: Q: Why does `overflow: auto;` work here?
      * w3schools claims "The overflow property only works for block elements with a specified height."
@@ -56,14 +96,15 @@ section.blog {
 }
 
 .sidebar {
-    background-color: white;
     float: right;
     width: 15%;
+    height: inherit;
     padding: .5cm;
+    background-color: #e1e1e1;
 }
 
 article.blog {
-    background-color: #f0ead6;  /* eggshell */
+    background-color: #e1e1e1;
     width: 66%;
     margin-left: auto;
     margin-right: auto;
@@ -81,9 +122,10 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 body {
     margin: 0;/* get rid of unwanted whitespace on edges of page */
     height: 100%;
+    background-color: #BDBFC1;
+    color:#3C4447;
 }
 
 html {
     height: 100%;
 }
-
