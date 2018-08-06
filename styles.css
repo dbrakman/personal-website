@@ -8,24 +8,23 @@
 }
 
 #profile {
-    display: flex;
     background-color: white;
     height: 80%;
-    justify-content: center;
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;  /* center vertically */
 }
-
 
 #profilePicture {
     border-radius: 50%;  /* Circular picture */
-    width: auto;
-    height: 100%;
-    display: block;  /* idk; for good luck */
-}
-
-#profilePictureContainer {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 16px;
+    /* -o-background-size: contain;  /* what is -o-? */
+    /* background-size: contain;  /* saved for a later kluge to use a bkg image instead */
+    object-fit: contain;  /* Q: Why does this statement have no effect? */
+    height: 90%;  /* I wanted to set padding on the parent and then use "contain" here */
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 /* from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
@@ -36,7 +35,7 @@
 }
 
 #siteHeader {
-    height: 5cm;
+    height: 12em;
     width: 100%;
     display: flex;
     /* TODO: Q: Why is `width: 100%` necessary here?
