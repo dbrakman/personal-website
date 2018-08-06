@@ -85,9 +85,16 @@ h3 {
      */
     background-color: #3C4447;
     color: #d8d9da;
+    box-shadow: 0 .125em .5em 0em #000;
+}
+
+section.notHeader {
+    display: flex;
+    align-item: stretch;  /* should make the sidebar extend to the bottom of the page */
 }
 
 section.blog {
+    width: 80%;
     overflow: auto;
     /* TODO: Q: Why does `overflow: auto;` work here?
      * w3schools claims "The overflow property only works for block elements with a specified height."
@@ -97,7 +104,7 @@ section.blog {
 
 .sidebar {
     float: right;
-    width: 15%;
+    width: 20%;
     height: inherit;
     padding: .5cm;
     background-color: #e1e1e1;
