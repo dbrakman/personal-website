@@ -7,6 +7,15 @@
     width: 80%;
 }
 
+#social-pane {
+    text-align: center;
+}
+
+.social a {
+    font-size: 1.5em;
+    color: #d8d9da;
+}
+
 #profile {
     height: 9em;
     display: flex;
