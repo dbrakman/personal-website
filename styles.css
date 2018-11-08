@@ -5,6 +5,7 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     width: 80%;
+    height: auto;
 }
 
 #social-pane {
@@ -17,7 +18,7 @@
 }
 
 #profile {
-    height: 11em;
+    height: 250px;
     display: flex;
     justify-content: center;  /* center horizontally */
     align-items: center;  /* center vertically */
@@ -38,7 +39,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     padding: 0.5em;
     box-sizing: border-box;
@@ -91,8 +92,8 @@ h3 {
      * w3schools claims that a block element "takes up the whole width"
      * and we defined header as a block element
      */
-    position: relative;  /* Gets the header shadow to draw on top of other sections. Q: why? */
-    top: 0;
+    position: fixed;
+    bottom: 50%;
 }
 
 /* w3schools boilerplate:*/
