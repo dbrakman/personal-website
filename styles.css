@@ -1,4 +1,14 @@
-/* Uffizi palette: https://coolors.co/e1e1e1-3c4447-787d78-3d4444-BDBFC1 */
+#siteHeader {
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* TODO: Q: Why is `width: 100%` necessary here?
+     * w3schools claims that a block element "takes up the whole width"
+     * and we defined header as a block element
+     */
+    margin-top: 15%;
+}
+
 .headerContent {
     margin-left: auto;  /* center horizontally */
     margin-right: auto;
@@ -14,7 +24,6 @@
 
 .social a {
     font-size: 1.5em;
-    color: #d8d9da;
 }
 
 #profile {
@@ -35,7 +44,6 @@
 }
 
 #profileStatus {
-    font-family: 'Palatino', 'Times', 'Serif';
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -71,7 +79,6 @@ h3 {
 
 #tagline {
     text-align: center;
-    font-family: Palatino, Times, Serif;
     font-size: 1.125em;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
@@ -97,16 +104,24 @@ footer > hr {
     transform: translateY(-50%);
 }
 
-#siteHeader {
-    height: auto;
-    width: 100%;
-    display: flex;
-    /* TODO: Q: Why is `width: 100%` necessary here?
-     * w3schools claims that a block element "takes up the whole width"
-     * and we defined header as a block element
-     */
-    position: fixed;
-    bottom: 50%;
+a:link {
+    color: #bdbfc1;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #787d78;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #787d78;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #787d78;
+    text-decoration: underline;
 }
 
 /* w3schools boilerplate:*/
@@ -117,10 +132,12 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 
 /* set body, html height to 100% to allow children to take up x% of page height/width */
 body {
-    margin: 0;/* get rid of unwanted whitespace on edges of page */
+    margin: 0; /* get rid of unwanted whitespace on edges of page */
     height: 100%;
-    background-color: #3C4447;
-    color: #d8d9da;
+    /* Uffizi palette: https://coolors.co/e1e1e1-3c4447-787d78-3d4444-BDBFC1 */
+    background-color: #3c4447;
+    color: #e1e1e1;
+    font-family: Palatino, Times, Serif;
 }
 
 html {
