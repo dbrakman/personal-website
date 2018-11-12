@@ -77,6 +77,19 @@ h3 {
     padding-bottom: 0.25em;
 }
 
+footer > hr {
+  /* Set footer color across browsers: https://stackoverflow.com/a/12399447 */
+  border-color: #bdbfc1;
+  background-color: #bdbfc1;
+  margin-top: 2em;
+  margin-bottom: 1.25em;
+}
+
+#copyrightText {
+    text-align: center;
+    font-size: 0.875em;
+}
+
 /* from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
 .centerVertically {
     position: relative;
