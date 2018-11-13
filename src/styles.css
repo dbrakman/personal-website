@@ -1,11 +1,8 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
 #siteHeader {
     height: auto;
-    width: 100%;
     display: flex;
-    /* TODO: Q: Why is `width: 100%` necessary here?
-     * w3schools claims that a block element "takes up the whole width"
-     * and we defined header as a block element
-     */
     margin-top: 15%;
 }
 
@@ -14,7 +11,6 @@
     margin-right: auto;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    width: 80%;
     height: auto;
 }
 
@@ -27,16 +23,15 @@
 }
 
 #profile {
-    height: 250px;
     display: flex;
-    justify-content: center;  /* center horizontally */
-    align-items: center;  /* center vertically */
+    flex-direction: column;
+    justify-content: flex-start; /* stack items from the top */
+    align-items: center;  /* center horizontally */
 }
 
 #profilePicture {
     border-radius: 50%;  /* Circular picture */
-    object-fit: contain;  /* Q: Why does this statement have no effect? */
-    height: 90%;
+    width: 50%;
     margin-left: 0px;
     margin-right: 16px;
     margin-top: 8px;
@@ -44,7 +39,7 @@
 }
 
 #profileStatus {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,5 +141,38 @@ body {
 
 html {
     height: 100%;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #profile {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #profilePicture {
+        width: 200px;
+        height: 200px;
+    }
+
+    #profileStatus {
+        text-align: left;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
 
